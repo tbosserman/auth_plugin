@@ -1,0 +1,12 @@
+[Unit]
+Description=Docker Auth Plugin
+Before=docker
+
+[Service]
+ExecStart=/usr/local/bin/auth_plugin
+KillMode=process
+Restart=on-failure
+RestartSec=2s
+
+[Install]
+WantedBy=multi-user.target
