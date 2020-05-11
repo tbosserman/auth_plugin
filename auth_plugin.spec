@@ -4,11 +4,11 @@ Release:	1%{?dist}
 Summary:	An docker plugin for authenticating calls to dockerd
 
 License:        BSD
-Source0:	auth_plugin-0.1.tar.gz
+Source0:	auth_plugin.tar.gz
 
 %description
 Not really an auth plugin per-se. Right now all it does is log all the
-attempts to talk to dockerd.
+attempts to talk to dockerd. It returns "allow" for all requests.
 
 %prep
 %setup -q
